@@ -46,6 +46,12 @@ buildOptions.modulesRules = [
   }, {
     test: /\.(htm?l)$/i,
     use: 'raw-loader'
+  }, {
+    test: /\.(png|jpe?g|ico|svg|gif)/i,
+    type: 'asset/resource',
+  }, {
+    test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+    type: 'asset/resource',
   }
 ];
 
@@ -55,6 +61,7 @@ buildOptions.plugins = [
   new CopyPlugin({
     patterns: [
       { from: 'src/img', to: 'img' },
+      { from: 'configs', to: 'configs' },
       // { from: './node_modules/pdfjs-dist/build/pdf.worker.min.mjs', to: path.resolve(__dirname, 'wwwroot') + '/js/pdf.worker.min.mjs' }
     ],
   }),

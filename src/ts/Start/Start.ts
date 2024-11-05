@@ -1,22 +1,22 @@
 import './start.scss';
-import { ModuleKitType } from '../ModuleKit/ModuleKit.types';
 import { Utils } from '../utils';
+import { EditorType } from '../Editor/editor.types';
 
 export class Start {
 
-  constructor () {
+  constructor() {
 
-    const moduleKit = document.createElement('module-kit') as ModuleKitType;
-    moduleKit.dataset.test = 'test is 1';
-    moduleKit.contents = {
+    const sEditor = document.createElement('s-editor') as EditorType;
+    // sEditor.dataset.test = 'test is 1';
+    sEditor.contents = {
       test: 'test text',
       styles: Utils.styles
     };
-    document.body.append(moduleKit);
+    document.body.append(sEditor);
 
-    setTimeout(()=>{
-      moduleKit.dataset.test = 'test is 2';
-    }, 3000);
+    // setTimeout(()=>{
+    //   sEditor.dataset.test = 'test is 2';
+    // }, 3000);
 
   }
 
