@@ -1,0 +1,36 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+		"module": "esnext",
+		"moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"esModuleInterop": true,
+    "strictNullChecks": false,
+		"outDir": "build",
+		"allowJs": true,
+		"checkJs": false,
+	},
+  "typeRoots": [
+    "./types",
+    "./node_modules/@types"
+  ],
+	"include": [
+		"./src/*.ts",
+		"./src/**/*.ts"
+	],
+	"exclude": [
+		"./**/*.var.ts",
+		"./**/*.spec.ts",
+		"./**/*-test.ts"
+	]
+}

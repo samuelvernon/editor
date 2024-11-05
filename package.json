@@ -1,0 +1,53 @@
+{
+  "name": "new-webpack-project",
+  "version": "1.0.0",
+  "description": "Kit for WebPack projects",
+  "private": "true",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "dev1": "tsc -w",
+    "dev2": "webpack --mode=development --watch",
+    "build": "webpack --mode=development --watch",
+    "release": "webpack --mode=production",
+    "publish": "npm run release && dotnet publish -c Release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Vlad Sasu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://"
+  },
+  "homepage": "https://",
+  "devDependencies": {
+    "parallelshell": "^3.0.2",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.80.5",
+    "sass-loader": "^16.0.3",
+    "ts-loader": "^9.2.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.8.6",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.13.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.3.1",
+    "http-server": "^14.0.0",
+    "mathjax": "^3.2.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "requirejs": "^2.3.6",
+    "source-map-loader": "^5.0.0",
+    "url-loader": "^4.1.1"
+  }
+}
