@@ -45,6 +45,7 @@
     "http-server": "^14.0.0",
     "mathjax": "^3.2.2",
     "mini-css-extract-plugin": "^2.9.2",
+    "moveable": "^0.53.0",
     "postcss-loader": "^8.1.1",
     "requirejs": "^2.3.6",
     "source-map-loader": "^5.0.0",
